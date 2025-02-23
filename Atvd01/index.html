@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" /> <!-- Define o conjunto de caracteres para suportar acentos e caracteres especiais -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Garante compatibilidade com versões antigas do Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ajusta a largura da página para o tamanho do dispositivo -->
+    <title>Formulário de Validação</title> <!-- Define o título da página -->
+    <link rel="stylesheet" href="/Atvd01/css/style.css">
+    <script defer src="js/script.js"></script> <!-- Importa o arquivo JavaScript, garantindo que ele seja carregado depois do HTML -->
+  </head>
+  <body>
+    <form id="formulario"> <!-- Cria um formulário com um identificador único -->
+      <label for="nome">Nome</label> <!-- Texto que descreve o campo de entrada -->
+      <input type="text" name="nome" id="nome" /> <!-- Campo para o usuário digitar seu nome -->
+      <span class="error" id="erro-nome"></span> <!-- Espaço para exibir mensagens de erro -->
+
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" /> <!-- Campo para o usuário digitar seu e-mail -->
+      <span class="error" id="erro-email"></span>
+
+      <label for="idade">Idade</label>
+      <input type="number" name="idade" id="idade" /> <!-- Campo para o usuário digitar sua idade -->
+      <span class="error" id="erro-idade"></span>
+
+      <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
+    </form>
+  </body>
+</html>
